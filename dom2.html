@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="app"></div>
+
+
+  <script>
+
+    //criar elemento
+    var novoElemento = document.createElement('a')
+    novoElemento.setAttribute('href','https://br.linkedin.com')
+
+    //Elemento filho
+    var textElement = document.createTextNode('Acessar LinkedIn')
+    novoElemento.appendChild(textElement)//Elemento Text em <a>
+      var containerElement = document.querySelector('.app')
+      containerElement.appendChild(novoElemento)
+
+  </script>
+
+</body>
+
+</html>
